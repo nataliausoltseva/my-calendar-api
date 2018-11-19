@@ -1,0 +1,14 @@
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\bin\Debug\netcoreapp2.1\BankCalendar.deps.json
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\bin\Debug\netcoreapp2.1\BankCalendar.runtimeconfig.json
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\bin\Debug\netcoreapp2.1\BankCalendar.runtimeconfig.dev.json
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\bin\Debug\netcoreapp2.1\BankCalendar.dll
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\bin\Debug\netcoreapp2.1\BankCalendar.pdb
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.csproj.CoreCompileInputs.cache
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.RazorAssemblyInfo.cache
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.RazorAssemblyInfo.cs
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.AssemblyInfoInputs.cache
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.AssemblyInfo.cs
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.RazorTargetAssemblyInfo.cache
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.dll
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.pdb
+C:\Users\Natalia\source\repos\BankCalendar\BankCalendar\obj\Debug\netcoreapp2.1\BankCalendar.csprojAssemblyReference.cache
