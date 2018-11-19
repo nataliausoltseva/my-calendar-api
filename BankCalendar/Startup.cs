@@ -36,7 +36,7 @@ namespace BankCalendar
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "19-11-2018", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "CalendarBank", Version = "v1" });
             });
 
         }

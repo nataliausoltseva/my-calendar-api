@@ -22,7 +22,7 @@ namespace BankCalendar.Models
                 context.CalendarItem.AddRange(
                     new CalendarItem
                     {
-                        Title = "19-11-2018",
+                        Date = "19-11-2018",
                         Event = "My Birthday Party",
                         Location = "Auckland",
                         Starts = "7:00 PM",

@@ -12985,11 +12985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Natalia\\source\\repos\\BankCalendar\\BankCalendar\\BankCalendar.csproj",
+      "projectUniqueName": "C:\\Users\\Natalia\\Source\\Repos\\nataliausoltseva\\my-calendar-api\\BankCalendar\\BankCalendar.csproj",
       "projectName": "BankCalendar",
-      "projectPath": "C:\\Users\\Natalia\\source\\repos\\BankCalendar\\BankCalendar\\BankCalendar.csproj",
+      "projectPath": "C:\\Users\\Natalia\\Source\\Repos\\nataliausoltseva\\my-calendar-api\\BankCalendar\\BankCalendar.csproj",
       "packagesPath": "C:\\Users\\Natalia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Natalia\\source\\repos\\BankCalendar\\BankCalendar\\obj\\",
+      "outputPath": "C:\\Users\\Natalia\\Source\\Repos\\nataliausoltseva\\my-calendar-api\\BankCalendar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
