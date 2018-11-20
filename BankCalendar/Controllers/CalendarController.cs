@@ -128,7 +128,7 @@ namespace BankCalendar.Controllers
         public async Task<List<string>> GetDate()
         {
             var calendar = (from m in _context.CalendarItem
-                            select m.Date).Distinct();
+                            select m.DateTime).Distinct();
 
             var returned = await calendar.ToListAsync();
 
