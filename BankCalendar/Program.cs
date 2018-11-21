@@ -27,7 +27,9 @@ namespace BankCalendar
                 {
                     var context = services.GetRequiredService<BankCalendarContext>();
                     context.Database.Migrate();
-                    SeedData.Initialize(services);
+
+                    SeedData seedData = services.GetRequiredService<SeedData>();
+                    seedData.Initialize();
                 }
                 catch(Exception ex)
                 {

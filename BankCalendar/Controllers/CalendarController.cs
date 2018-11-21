@@ -22,27 +22,21 @@ namespace BankCalendar.Controllers
 
         // GET: api/Calendar
         [HttpGet]
-        public IEnumerable<CalendarItem> GetCalendarItem()
+        public async Task<IActionResult> GetCalendarItems()
         {
-            return _context.CalendarItem;
+            var calendarItems = await _context.CalendarItem.ToListAsync();
+            return Ok(calendarItems);
         }
 
         // GET: api/Calendar/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCalendarItem([FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             var calendarItem = await _context.CalendarItem.FindAsync(id);
-
             if (calendarItem == null)
             {
                 return NotFound();
             }
-
             return Ok(calendarItem);
         }
 
@@ -78,7 +72,7 @@ namespace BankCalendar.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(calendarItem);
         }
 
         // POST: api/Calendar
@@ -93,7 +87,7 @@ namespace BankCalendar.Controllers
             _context.CalendarItem.Add(calendarItem);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCalendarItem", new { id = calendarItem.ID }, calendarItem);
+            return Ok(calendarItem);
         }
 
         // DELETE: api/Calendar/5
@@ -120,19 +114,6 @@ namespace BankCalendar.Controllers
         private bool CalendarItemExists(int id)
         {
             return _context.CalendarItem.Any(e => e.ID == id);
-        }
-
-        //GET: api/Calendar/Date
-        [Route("date")]
-        [HttpGet]
-        public async Task<List<string>> GetDate()
-        {
-            var calendar = (from m in _context.CalendarItem
-                            select m.DateTime).Distinct();
-
-            var returned = await calendar.ToListAsync();
-
-            return returned;
         }
     }
 }

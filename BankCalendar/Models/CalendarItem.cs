@@ -8,8 +8,9 @@ namespace BankCalendar.Models
     public class CalendarItem
     {
         public int ID { get; set; }
-        public string DateTime { get; set; }
         public string Event { get; set; }
         public string Location { get; set; }
+        public DateTime Start { get; set; }
+        public DateTime End { get; set; }
     }
 }

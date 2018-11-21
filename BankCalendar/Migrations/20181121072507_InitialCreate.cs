@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BankCalendar.Migrations
 {
@@ -12,12 +13,10 @@ namespace BankCalendar.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Date = table.Column<string>(nullable: true),
                     Event = table.Column<string>(nullable: true),
                     Location = table.Column<string>(nullable: true),
-                    Starts = table.Column<string>(nullable: true),
-                    Ends = table.Column<string>(nullable: true),
-                    Day = table.Column<string>(nullable: true)
+                    Start = table.Column<DateTime>(nullable: false),
+                    End = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {

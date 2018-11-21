@@ -7,28 +7,32 @@ using System.Threading.Tasks;
 
 namespace BankCalendar.Models
 {
-    public static class SeedData
+    public class SeedData
     {
-        public static void Initialize(IServiceProvider serviceProvider)
-        {
-            using (var context = new BankCalendarContext(
-                serviceProvider.GetRequiredService<DbContextOptions<BankCalendarContext>>()))
-            {
-                if (context.CalendarItem.Count() > 0)
-                {
-                    return;
-                }
+        private BankCalendarContext _context;
 
-                context.CalendarItem.AddRange(
-                    new CalendarItem
-                    {
-                        DateTime = "Monday, 19-11-2018, From 7:00 PM to 11:30 PM",
-                        Event = "My Birthday Party",
-                        Location = "Auckland"
-                    }
-                );
-                context.SaveChanges();
+        public SeedData(BankCalendarContext context)
+        {
+            _context = context;
+        }
+        
+        public void Initialize()
+        { 
+            if (_context.CalendarItem.Count() > 0)
+            {
+                return;
             }
+
+            _context.CalendarItem.AddRange(
+                new CalendarItem
+                {
+                    Event = "My Birthday Party",
+                    Location = "Auckland",
+                    Start = new DateTime (2018,11,21,12,30,0,0),
+                    End = new DateTime (2018,11,21,21,0,0)
+                    }
+            );
+            _context.SaveChanges();
         }
     }
 }
