@@ -90,6 +90,11 @@ namespace BankCalendar.Controllers
             return Ok(calendarItem);
         }
 
+        public Task<IActionResult> PutEvent(object id, CalendarItem calendaritem1)
+        {
+            throw new NotImplementedException();
+        }
+
         // DELETE: api/Calendar/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCalendarItem([FromRoute] int id)
